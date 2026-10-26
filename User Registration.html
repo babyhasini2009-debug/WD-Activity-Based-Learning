@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>registration</title>
+    <style>
+        body{
+            margin:0;
+            display:flex;
+            justify-content: center;
+            align-items:center;
+            min-height:100vh;
+            background-color:violet;
+        }
+            .form-row{
+                margin:15px 0;
+                margin-top:25px;
+            }
+            .form-row label{
+                display:block;
+                margin-bottom:5px;
+            }
+            .form-row input,
+            .form-row select{
+                padding:7px;
+                width:250px;
+            }
+            .buttons{
+                text-align:center;
+                margin-top:25px;
+            }
+            h1{
+                color:purple
+            }
+            .register{
+                background-color:green;
+                color:black;
+            }
+            .clear{
+                background-color:grey;
+                color:black;
+            }
+            input:focus{
+                background-color:floralwhite;
+                color:brown
+            }
+        </style>
+        </head>
+        <body>
+<div style="border: 2px solid black; width:500px; padding:30px; margin: 50px auto; border-radius: 15px; background-color:white">
+        <h1 style=text-align:center>User Registration</h1>
+        <form action="#" method="POST">
+            <div class="form-row">
+            <label>Full Name:</label>
+            <input  type="text" placeholder="Enter your name" required><br><br>
+            </div>
+             <div class="form-row">
+            <label>Email:</label>
+            <input  type="text" placeholder="Enter your email" required><br><br>
+            </div>
+            <div class="form-row"> 
+            <label>Password:</label>
+            <input type="password" placeholder="password" required><br><br>
+            </div>
+             <div class="form-row">
+            <label>Mobile Number:</label>
+            <input type="text" placeholder="Enter Mobile Number" required><br><br>
+            </div>
+             <div class="form-row">
+            <label>Country:</label>
+            <select>
+                <option>--Select Country--</option>
+                <option>India</option>
+                <option>USA</option>
+                <option>South Korea</option>
+                <option>japan</option>
+                <option>Thailand</option>
+                <option>France</option>
+                <option>Germany</option>
+                <option>Australia</option>
+            </select><br><br>
+            </div>
+           <div class="gender">
+            <strong>Gender:</strong>
+            <label>
+                <input type="radio" name="gender">
+                Male
+            </label>
+            <label>
+                <input type="radio" name="gender">
+                female
+            </label>
+           </div><br><br>
+           <div class="buttons">
+            <button type="submit" class="register">Register</button>
+            <button type="reset" class="clear">Clear</button>
+           </div>
+                </form>
+                </div>
+    </body>
+</html>
